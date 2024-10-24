@@ -28,7 +28,7 @@ app.set('port', config.app.port);
 // Rutas
 app.use('/api/user', auth);
 app.use('/api/guest', guest);
-app.use('/api/student', validateToken, student);
+app.use('/api/student', student); //validateToken, 
 app.use('/api/admin', validateToken, admin);
 
 module.exports = app;
